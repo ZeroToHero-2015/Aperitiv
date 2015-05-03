@@ -12,10 +12,10 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
-        <TextBox Grid.Row="0" AcceptsReturn="True" />
+        <TextBox Name="OutputTextBox" Grid.Row="0" AcceptsReturn="True" />
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Margin="12">Do stuff</Button>
-            <Button Margin="12">Do stuff async</Button>
+            <Button Margin="12" Click="DoStuff">Do stuff</Button>
+            <Button Margin="12" Click="DoStuffAsync">Do stuff async</Button>
         </StackPanel>
     </Grid>
 </Window>

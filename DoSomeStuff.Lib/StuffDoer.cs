@@ -8,13 +8,13 @@ namespace DoSomeStuff.Lib
         public string GetStuff()
         {
             Task.Delay(TimeSpan.FromSeconds(5)).Wait();
-            return "abracadabra";
+            return "abracadabra normal";
         }
 
         public async Task<string> GetStuffAsync()
         {
             await Task.Delay(TimeSpan.FromSeconds(5));
-            return "abracadabra";
+            return "abracadabra asincron";
         }
     }
 }
